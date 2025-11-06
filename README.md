@@ -34,9 +34,9 @@ temporelle définie par l'utilisateur.
 //--------PORTFOLIO OPTIMIZER-------------------//
 
 >>> Univers US <<<
-ETF: SPY, VEA, EEM
-BONDS: AGG, BNDX
-COMMODITIES: GLD, DBC
+ETF: SPY ; VEA ; EEM
+BONDS: AGG ; BNDX
+COMMODITIES : GLD ; DBC
 
 >>> Univers EU <<<
 ETF: CSPX.L, VEVE.L, EIMI.L

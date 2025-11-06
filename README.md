@@ -46,14 +46,14 @@ EU Universe
 
 The number of securities is kept small, otherwise the code would take too long to run.
 
->>> Constraints proposed to the user <<<  
--> Long-only or not?  
--> Maximum weight per asset?  
--> Group caps?  
--> Target volatility?  
--> Maximum tracking error vs benchmark?  
--> Maximum turnover?  
--> Minimum ESG score?  
+Constraints proposed to the user 
+>>> Long-only or not?
+>>> Maximum weight per asset?  
+>>> Group caps?  
+>>> Target volatility?  
+>>> Maximum tracking error vs benchmark?  
+>>> Maximum turnover?  
+>>> Minimum ESG score?  
 
 If the user chooses US ETFs, then the benchmark is:  
 60% SPY (S&P 500)  

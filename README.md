@@ -1,68 +1,67 @@
 //--------NOTE------------------------------------//
 
-Ceci est un projet personnel.
+This is a personal project.
 
-Mon objectif est de montrer mes compétences en codage python
-mais aussi en compréhension de l'optimisation de portefeuille.
-Je l'ai réalisé seul en prenant mon temps pour faire 
-un fichier README explicatif de l'intégralité du programme pour 
-le rendre lisible et compréhensible par tous.
+My goal is to demonstrate my skills in Python coding
+as well as my understanding of portfolio optimization.
+I completed it on my own, taking the time to create
+a detailed README file explaining the entire program,
+so it can be readable and understandable by anyone.
 
 Tanguy Moncler
 
-//--------SYNTHESE--------------------------------//
-Le programme récupère les prix daily d'un univers de tickers.
-(ETF . BONDS . COMMODITIES)
 
-Il génère un portefeuille selon les contraintes entrées par l'utilisateur.
-Il fait un backtest et rebalance le pf chaque semaine sur une plage 
-temporelle définie par l'utilisateur.
+//--------SUMMARY--------------------------------//
+
+The program retrieves daily prices from a universe of tickers
+(ETF . BONDS . COMMODITIES).
+
+It generates a portfolio according to the constraints entered by the user.
+It performs a backtest and rebalances the portfolio each week
+over a time period defined by the user.
 
 
-//--------EXECUTION DU PROGRAMME------------------//
+//--------PROGRAM EXECUTION----------------------//
 
--> Rendez-vous sur Google Colab ou Python en local sur votre ordinateur.
--> Copier la ligne de code suivante et l'exécuter dans votre notebook:
+-> Go to Google Colab or run Python locally on your computer.  
+-> Copy and execute the following line of code in your notebook:
 
 ! pip install pandas numpy yfinance matplotlib cvxpy
 
--Coller l'intégralité du code compris dans le document "multi-asset-portfolio-optimizer.py"
--Exécuter le programme et selectionner vos contraintes.
-
+-> Paste the entire code contained in the file “multi-asset-portfolio-optimizer.py”  
+-> Run the program and select your constraints.
 
 
 //--------PORTFOLIO OPTIMIZER-------------------//
 
->>> Univers US <<<
-ETF: SPY ; VEA ; EEM
-BONDS: AGG ; BNDX
-COMMODITIES : GLD ; DBC
+US Universe  
+>>> ETF: SPY ; VEA ; EEM  
+>>> BONDS: AGG ; BNDX  
+>>> COMMODITIES: GLD ; DBC  
 
->>> Univers EU <<<
-ETF: CSPX.L, VEVE.L, EIMI.L
-BONDS: IEAC.L, IGLA.L
-COMMODITIES: SGLN.L, CMOD.L
+EU Universe  
+>>> ETF: CSPX.L ; VEVE.L ; EIMI.L  
+>>> BONDS: IEAC.L ; IGLA.L  
+>>> COMMODITIES: SGLN.L ; CMOD.L  
 
->>> Contraintes proposées à l'utilisateur<<<
--> Long only ou non ?
--> Cap poids ?
--> Caps par groupe ?
--> Cible de volatilité ?
--> Tracking-error maximum par rapport au benchmark ?
--> Turnover maximum ?
--> ESG score minimum ?
+The number of securities is kept small, otherwise the code would take too long to run.
+
+>>> Constraints proposed to the user <<<  
+-> Long-only or not?  
+-> Maximum weight per asset?  
+-> Group caps?  
+-> Target volatility?  
+-> Maximum tracking error vs benchmark?  
+-> Maximum turnover?  
+-> Minimum ESG score?  
+
+If the user chooses US ETFs, then the benchmark is:  
+60% SPY (S&P 500)  
+40% AGG (US Aggregate Bonds)
+
+If the user chooses UCITS Europe ETFs, then the benchmark is:  
+60% CSPX.L (iShares Core S&P 500 UCITS ETF)  
+40% IEAC.L (iShares Euro Aggregate Bond UCITS ETF)
 
 
-Si l'utilisateur choisi des ETF US alors le Bench est : 
-60 % SPY (S&P 500)
-40 % AGG (US Aggregate Bonds)
-
-Si l'utilisateur choisi des ETF UCITS Europe alors le Bench est :
-60 % CSPX.L (iShares Core S&P 500 UCITS ETF)
-40 % IEAC.L (iShares Euro Aggregate Bond UCITS ETF)
-
-
-
-
-//----------------------------------------------///
-
+//----------------------------------------------//
